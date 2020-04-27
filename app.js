@@ -16,7 +16,7 @@ passport.use(new VkStrategy(
     {
       clientID: VK_APP_ID,
       clientSecret: VK_APP_SECRET,
-      callbackURL: "http://localhost:3000/auth/vk/callback",
+      callbackURL: "https://alka99.herokuapp.com/auth/vk/callback",
       scope: ['friends'],
         profileFields: ['photo_100']
     },
