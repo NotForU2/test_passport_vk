@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #597da3;
+}
+
+#welcome{
+  display: block;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+a{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  display: block;
+  background: #fff;
+  color: #597da3;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.me > p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.round {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  box-shadow: 0 0 0 3px cornflowerblue, 0 0 13px #333;
+}
+.me{
+  color:white;
+}
+.list{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 3px solid #fff;
+  background-color: #fff;
+  color:#597da3;
+}
+.friend{
+    width:160px;
+    display:inline-block;
+}
+.friend > p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

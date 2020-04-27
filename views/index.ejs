@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+        <% if (!user) { %>
+            <div id = 'welcome'>
+                <h2>Welcome! Please log in.</h2>
+                <a href="/auth/vk">Log in with VK</a>
+            </div>
+        <% } else { %>
+            <div class='me'>
+                <img class = 'round' src = <%=user.photos[1].value%>>
+                <p><%= user.displayName %></p>
+            </div>
+            <div class="list">
+                <h2>Your friends</h2>
+                <%for(const x of user.friends){%>
+                    <div class="friend">
+                        <img class = 'round' src = <%=x.photo_100%>>
+                        <p><%= x.first_name + ' ' + x.last_name %></p>
+                </div>
+                <%}%>
+            </div>
+        <p>
+            <a href="/logout">Log out</a>
+        </p>
+
+    <% } %>
+
+</body>
+</html>
+
